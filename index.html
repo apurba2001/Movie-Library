@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+<body>
+    <label>
+        Search by: 
+        <select id="select-search">
+            <option value="title">Title</option>
+            <option value="genre">Genre</option>
+            <option value="titleGenre">Title and Genre</option>
+        </select>
+    </label>
+    <label>
+        Title
+        <input type="text" id="title-input"/>
+    </label>
+    <label>
+        Genre
+        <input type="text" id="genre-input"/>
+    </label>
+    <button id="search">Search</button>
+  
+    <div style="display: flex;">
+        <span>
+              <h4 style="margin-right: 100px;">Result</h4>
+              <ul id="results"></ul>
+        </span>
+        <span style="color: brown;">
+            <h4>Count by genre</h4>
+            <ul id="count"></ul>
+        </span>
+    </div>
+  
+    <button id="title-sort">Sort by title</button>
+    <button id="genre-sort">Sort by genre</button>
+    
+</body>
+<script type="text/javascript" src="./script.js"></script>
+</html>
